@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(235, 187, 195);
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+}
+.fir {
+    position:absolute;
+    background: rgb(255, 240, 240);
+    height:100px;
+    width:100vw;
+    top:0;
+    left:0;
+    margin:0 0 0 0;
+}
+.sec {
+    position:absolute;
+    background: rgb(173, 173, 173);
+    height:40px;
+    width:100vw;
+    top:100px;
+    left:0;
+    margin:0 0 0 0;
+}
