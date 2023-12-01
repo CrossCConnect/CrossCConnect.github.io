@@ -7,18 +7,59 @@ body {
 .fir {
     position:absolute;
     background: rgb(255, 240, 240);
-    height:100px;
+    height:59px;
     width:100vw;
     top:0;
     left:0;
     margin:0 0 0 0;
+    display: inline;
+    z-index: -1;
 }
 .sec {
     position:absolute;
     background: rgb(173, 173, 173);
     height:40px;
     width:100vw;
-    top:100px;
+    top:59px;
     left:0;
     margin:0 0 0 0;
+    z-index: -1;
 }
+.mainbody {
+    width:100px;
+    height:auto;
+    top:300px;
+    margin:0 auto;
+    margin-top:200px;
+}
+.searchicon {
+    background-color: rgb(149, 207, 255);
+    width:43px;
+    height:40px;
+    border-radius: 2px 7px 7px 2px;
+    display: inline-flex;
+}
+.searchbar {
+    box-sizing: content-box;
+    display: inline-flex;
+    height:20px;
+    margin-top:10px;
+}
+.search {
+    box-sizing: content-box;
+    height:36px;
+    min-width:180px;
+    width:30vw;
+    margin-top:0px;
+    display: inline-flex;
+    border:1px black;
+    border-style:dashed;
+}
+#logo {
+    box-sizing: content-box;
+    height:40px;
+    display: inline-flex;
+    margin: 0 20px 0 10px;
+
+}
+
