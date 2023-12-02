@@ -13,7 +13,6 @@ body {
     left:0;
     margin:0 0 0 0;
     display: inline;
-    z-index: -1;
 }
 .sec {
     position:absolute;
@@ -22,8 +21,7 @@ body {
     width:100vw;
     top:59px;
     left:0;
-    margin:0 0 0 0;
-    z-index: -1;
+    margin:0 0 100px 0;
 }
 .mainbody {
     width:100px;
@@ -34,6 +32,7 @@ body {
 }
 .searchicon {
     background-color: #FEB249;
+    display:grid;
     width:43px;
     height:42px;
     border-radius: 2px 7px 7px 2px;
@@ -41,22 +40,25 @@ body {
     border-width: 1px;
     border-color:orange;
     border-style: double;
+    rotate:90deg;
     
 }
 .searchicon:hover {
     background-color: #faa123;
 }
-/*search icon in submit search button*/
-.searchicon > span{
+/*search icon placed in front of submit search button*/
+.searchicon ~ span{
     font-size:35px;
-    rotate: 88deg;
     margin-left:8px;
+    rotate:88deg;
+
 }
 .searchbar {
     box-sizing: content-box;
     display: inline-flex;
     height:20px;
     margin-top:10px;
+    z-index:5;
 }
 .search {
     box-sizing: content-box;
@@ -68,6 +70,28 @@ body {
 }
 .search::checked {
     border:20px;
+}
+.accountText {
+    box-sizing: content-box;
+    color:white;
+    height:40px;
+    font-size:17px;
+    margin:0;
+    padding:5px;
+    display:inline-block;
+}
+.shoppingCartIcon {
+    height:39px;
+}
+.featuredProductScroll {   
+    display:inline-flex;
+    background-color: aqua;
+    width:70vw;
+    overflow-x: scroll;
+    margin:150px 15vw 0 15vw;
+}
+.featuredProducts {
+    min-width: 70vw;
 }
 #logo {
     box-sizing: content-box;

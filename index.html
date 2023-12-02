@@ -7,17 +7,34 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body onload="setInterval(tick(), 1)">
-    <!--The "fir"-st and "sec"-ond rectangle that spans the width of the page-->
+    <!--The "fir"-st and "sec"-ond rectangle that spans the width of the page
+    - used mostly for decoration and organization-->
     <div class="fir">
+        <!--SearchBar and submit button, including the search symbol-->
         <div class="searchbar">
         <img id="logo" src="images/crossConEarth.png">
             <input onkeydown="hello()"onclick="click()"class="search" type="search" value="search">
-            <button class="searchicon" type="submit">
-                <span>&#9740</span> </button>
+            <input class="searchicon" type="submit" value="">
+                <span>&#9740</span> </input>
         </div>
-    </div> <div class="sec"></div>
-
-    
+        <span class="accountText">Welcome!<br><b>Sign In</b></span>
+        <img class="shoppingCartIcon" src="images/ShoppingCartIcon.png">
+    </div> 
+    <div class="sec"></div>
+<!--"Featured Products" - the assortment of products that
+first catch a user's eye that takes up a large portion of
+the main webpage-->
+    <div class="featuredProductScroll">
+    <!--Featured start-->
+        <div class="featuredProducts">
+            <p>hi</p>
+        </div>
+        <div class="featuredProducts">
+            <p>hello!</p>
+        </div>
+    <!--Featured end-->
+    </div>
+<!--Main products body-->
     <div class="mainbody">
         <p>hello?!SFA</p>
     </div>
