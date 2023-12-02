@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(235, 187, 195);
+    background-color: #FBECEB;
     color:rgb(0, 0, 0);
     font-size:30px;
     font-family:'Courier New', Courier, monospace;
 }
 .fir {
     position:absolute;
-    background: rgb(255, 240, 240);
+    background: #002447;
     height:59px;
     width:100vw;
     top:0;
@@ -17,7 +17,7 @@ body {
 }
 .sec {
     position:absolute;
-    background: rgb(173, 173, 173);
+    background: #53D3D1;
     height:40px;
     width:100vw;
     top:59px;
@@ -33,11 +33,24 @@ body {
     margin-top:200px;
 }
 .searchicon {
-    background-color: rgb(149, 207, 255);
+    background-color: #FEB249;
     width:43px;
-    height:40px;
+    height:42px;
     border-radius: 2px 7px 7px 2px;
     display: inline-flex;
+    border-width: 1px;
+    border-color:orange;
+    border-style: double;
+    
+}
+.searchicon:hover {
+    background-color: #faa123;
+}
+/*search icon in submit search button*/
+.searchicon > span{
+    font-size:35px;
+    rotate: 88deg;
+    margin-left:8px;
 }
 .searchbar {
     box-sizing: content-box;
@@ -49,11 +62,12 @@ body {
     box-sizing: content-box;
     height:36px;
     min-width:180px;
-    width:30vw;
+    width:30vw; 
     margin-top:0px;
     display: inline-flex;
-    border:1px black;
-    border-style:dashed;
+}
+.search::checked {
+    border:20px;
 }
 #logo {
     box-sizing: content-box;
