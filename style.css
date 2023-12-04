@@ -31,16 +31,19 @@ body {
     margin-top:200px;
 }
 .searchicon {
+    position:relative;
     background-color: #FEB249;
     display:grid;
-    width:43px;
-    height:42px;
-    border-radius: 2px 7px 7px 2px;
+    width:42px;
+    height:39px;
+    border-radius: 7px 7px 1px 1px;
     display: inline-flex;
     border-width: 1px;
     border-color:orange;
     border-style: double;
     rotate:90deg;
+    left:-40px;
+    top:2px;
     
 }
 .searchicon:hover {
@@ -48,10 +51,11 @@ body {
 }
 /*search icon placed in front of submit search button*/
 .searchicon ~ span{
+    position:relative;
     font-size:35px;
-    margin-left:8px;
-    rotate:88deg;
-
+    rotate:110deg;
+    top:13px;
+    left:-62px;
 }
 .searchbar {
     box-sizing: content-box;
@@ -62,11 +66,13 @@ body {
 }
 .search {
     box-sizing: content-box;
-    height:36px;
+    height:40px;
     min-width:180px;
     width:30vw; 
     margin-top:0px;
     display: inline-flex;
+    border-radius: 7px;
+    border: none;
 }
 .search::checked {
     border:20px;
@@ -83,15 +89,21 @@ body {
 .shoppingCartIcon {
     height:39px;
 }
-.featuredProductScroll {   
+#featuredProductScroll {   
     display:inline-flex;
-    background-color: aqua;
-    width:70vw;
+    background-color: rgb(238, 236, 236);
+    border-radius:6px;
+    width: 70vw;
+    height: 300px;
     overflow-x: scroll;
-    margin:150px 15vw 0 15vw;
+    margin:100px 15vw 0 15vw;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
 }
 .featuredProducts {
+    display:inline-flex;
     min-width: 70vw;
+    scroll-snap-align: start;
 }
 #logo {
     box-sizing: content-box;
@@ -100,4 +112,3 @@ body {
     margin: 0 20px 0 10px;
 
 }
-
